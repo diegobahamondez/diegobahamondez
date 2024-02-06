@@ -23,7 +23,9 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">
             Santiago, Chile
           </h4>
-          <p>Developed the backend infrastructure for 3 projects.</p>
+          <p>Designed and developed the backend for 3 projects using Python
+            and several AWS services
+          </p>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
@@ -50,7 +52,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-          Student Researcher
+          Student Researcher - CIMS JRI
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Santiago, Chile
