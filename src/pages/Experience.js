@@ -24,7 +24,7 @@ function Experience() {
             Santiago, Chile
           </h4>
           <p>Designed and developed the backend for 3 projects using Python
-            and several AWS services
+            and several AWS services (Lambda, DynamoDB, API Gateway and many more)
           </p>
         </VerticalTimelineElement>
 
