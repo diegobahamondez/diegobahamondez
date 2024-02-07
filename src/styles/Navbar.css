@@ -44,7 +44,7 @@ cursor: pointer;
 }
 
 .nav-links:hover{
-  background-color: rgb(74, 0, 57);
+  background-color: #4F0341;
   color: #fff;
   border-radius: 4px;
   transition: all 0.2s ease-in-out;
@@ -91,7 +91,7 @@ cursor: pointer;
   }
 
   .nav-links:hover{
-    background: rgb(74, 0, 57)rgb;
+    background: #4F0341;
     color: white;
     transition: all 0.3s ease-in-out;;
   }
