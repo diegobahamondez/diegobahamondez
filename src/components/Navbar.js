@@ -28,7 +28,7 @@ class Navbar extends Component{
             {MenuItems.map((item, index) => {
               return (            
               <li key = {index}>
-                <Link className={item.cName} to={item.url}>
+                <Link className={item.cName} to={item.url} onClick={this.closeMenu}>
                   <i className={item.icon} aria-hidden="true">
                   </i>{item.title}
                 </Link>
