@@ -1,12 +1,5 @@
 .footer {
-  width: 100%;
   background: #21325e;
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 20px;
 }
 
