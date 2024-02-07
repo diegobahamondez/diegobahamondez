@@ -1,11 +1,13 @@
 .home {
   align-items: center;
+  flex: 1;
   font-family: "Arial", sans-serif;
   color: #3e497a;
 }
 
 .about {
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 75px);
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
