@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      <p>&copy; 2024 diegobahamondez.com</p>
+      <p>&copy; version 0.2.0, 2024, made by Diego Bahamondez with React JS</p>
     </div>
   );
 }

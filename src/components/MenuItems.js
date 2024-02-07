@@ -6,10 +6,10 @@ export const MenuItems = [
         icon : "fa fa-home"
     },
     {
-        title : "About",
-        url : "/About",
+        title : "Projects",
+        url : "/projects",
         cName : "nav-links",
-        icon : "fa fa-circle-info"
+        icon : "fa fa-code "
     },
     {
         title : "Contact",
