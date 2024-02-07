@@ -1,20 +1,17 @@
 .home {
+  min-height: calc(100vh - 60px);
   align-items: center;
-  flex: 1;
-  font-family: "Arial", sans-serif;
-  color: #3e497a;
+  display: flex;
+  background-color: #21325e;
+  padding-top: 120px;
 }
 
 .about {
-  min-height: calc(100vh - 75px);
-  height: 100%;
   width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: #21325e;
   color: #f0f0f0;
 }
 
