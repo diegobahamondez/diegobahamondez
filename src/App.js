@@ -1,15 +1,14 @@
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link"
+import { HashLink as Link } from "react-router-hash-link";
 import Home from "./routes/Home";
 import Experience from "./routes/Experience";
 import Projects from "./routes/Projects";
 
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import { React, useEffect, useRef } from "react";
 
-export default function  App() {
-
+export default function App() {
   const appRef = useRef(null);
 
   useEffect(() => {
@@ -27,9 +26,8 @@ export default function  App() {
     };
   }, []);
 
-
   return (
-    <div ref={appRef}  className="App">
+    <div ref={appRef} className="App">
       <style jsx>{`
         .App {
           background-image: radial-gradient(
@@ -41,26 +39,34 @@ export default function  App() {
       `}</style>
       <ol>
         <li>
-          <Link to = "#aboutSection">About</Link>
+          <Link smooth to="/#aboutSection">
+            About
+          </Link>
         </li>
         <li>
-          <Link to = "#experienceSection">Experience</Link>
+          <Link smooth to="/#experienceSection">
+            Experience
+          </Link>
         </li>
         <li>
-          <Link to = "#projectSection">Projects</Link>
+          <Link smooth to="/#projectSection">
+            Projects
+          </Link>
         </li>
       </ol>
-      <section id = "#aboutSection">
+      <section id="aboutSection">
         <Home></Home>
       </section>
-      <section id = "#experienceSection">
+      <section id="experienceSection">
         <Experience></Experience>
       </section>
-      <section id = "#projectSection">
+      <section id="projectSection">
         <Projects></Projects>
       </section>
+      <Footer />
     </div>
   );
 }
+
 
 
