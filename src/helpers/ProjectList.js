@@ -10,10 +10,10 @@ export const ProjectList = [
     description: "Actually my first React App!",
   },
   {
-    name: "Chad Language Tutor",
+    name: "AI Language Tutor",
     image: Proj2,
     skills: "React, Python, Flask",
     github: "https://github.com/diegobahamondez/chad-language-tutor",
     description: "AI Language Tutor for speaking practice!",
-  }
+  },
 ];
