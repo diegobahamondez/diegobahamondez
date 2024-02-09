@@ -2,9 +2,7 @@
   align-items: center;
   min-height: calc(100vh - 60px);
   display: flex;
-  background-color: #4F0341;
   opacity: 1;
-  background: linear-gradient(135deg, #00000055 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(225deg, #000000 25%, transparent 25%) -14px 0/ 28px 28px, linear-gradient(315deg, #00000055 25%, transparent 25%) 0px 0/ 28px 28px, linear-gradient(45deg, #000000 25%, #4F0341 25%) 0px 0/ 28px 28px;  
   padding-top: 120px;
   width: 100%;
   justify-content: center;
