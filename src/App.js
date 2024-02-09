@@ -1,72 +1,56 @@
-import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
-import Home from "./routes/Home";
-import Experience from "./routes/Experience";
-import Projects from "./routes/Projects";
-
+import React, { useEffect, useState } from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import { React, useEffect, useRef } from "react";
 
-export default function App() {
-  const appRef = useRef(null);
+const App = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
 
   useEffect(() => {
-    const updateMousePosition = (ev) => {
-      if (!appRef.current) return;
-      const { clientX, clientY } = ev;
-      appRef.current.style.setProperty("--x", `${clientX}px`);
-      appRef.current.style.setProperty("--y", `${clientY}px`);
-    };
-
-    window.addEventListener("mousemove", updateMousePosition);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("mousemove", updateMousePosition);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  const gradientStyle = {
+    background: `radial-gradient(600px at ${cursorPosition.x}px ${
+      cursorPosition.y + scrollPosition
+    }px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+  };
   return (
-    <div ref={appRef} className="App">
-      <style jsx>{`
-        .App {
-          background-image: radial-gradient(
-            circle farthest-side at var(--x, 100px) var(--y, 100px),
-            #1250aa 0%,
-            transparent 100%
-          );
-        }
-      `}</style>
-      <ol>
-        <li>
-          <Link smooth to="/#aboutSection">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="/#experienceSection">
-            Experience
-          </Link>
-        </li>
-        <li>
-          <Link smooth to="/#projectSection">
-            Projects
-          </Link>
-        </li>
-      </ol>
-      <section id="aboutSection">
-        <Home></Home>
+    <div className="bg-linux leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <section style={gradientStyle}>
+        <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
+          <div className="lg:flex lg:justify-between lg:gap-4">
+            <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+              <Header />
+            </header>
+            <main className="pt-24 lg:w-1/2 lg:py-24">
+              <About />
+              <Experience />
+              <Projects />
+              <Footer />
+            </main>
+          </div>
+        </div>
       </section>
-      <section id="experienceSection">
-        <Experience></Experience>
-      </section>
-      <section id="projectSection">
-        <Projects></Projects>
-      </section>
-      <Footer />
     </div>
   );
-}
+};
 
-
-
+export default App;
