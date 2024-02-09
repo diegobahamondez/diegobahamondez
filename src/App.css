@@ -3,21 +3,17 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .App {
   text-align: center;
   min-height: 100vh;
-}
-
-
-body {
-  min-height: 100vh;
-  padding: 0;
-  margin: 0;
 }
