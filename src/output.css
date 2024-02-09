@@ -562,16 +562,8 @@ video {
   display: flex;
 }
 
-.h-\[20vh\]{
-  height: 20vh;
-}
-
 .min-h-screen{
   min-height: 100vh;
-}
-
-.w-screen{
-  width: 100vw;
 }
 
 .max-w-screen-xl{
@@ -600,18 +592,18 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.border{
+  border-width: 1px;
+}
+
+.bg-gradbg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 28 34 / var(--tw-bg-opacity));
+}
+
 .bg-gray-800{
   --tw-bg-opacity: 1;
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-
-.bg-linux{
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 3 65 / var(--tw-bg-opacity));
-}
-
-.bg-\[radial-gradient\(169\.40\%_89\.55\%_at_94\.76\%_6\.29\%\2c rgba\(0\2c 0\2c 0\2c 0\.40\)_0\%\2c rgba\(255\2c 255\2c 255\2c 0\.00\)_100\%\)\]{
-  background-image: radial-gradient(169.40% 89.55% at 94.76% 6.29%,rgba(0,0,0,0.40) 0%,rgba(255,255,255,0.00) 100%);
 }
 
 .p-4{
@@ -654,6 +646,10 @@ video {
   font-weight: 500;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
 .leading-normal{
   line-height: 1.5;
 }
@@ -686,6 +682,15 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-pgreen{
+  color: #7DC9B;
+}
+
+.text-sky-400{
+  --tw-text-opacity: 1;
+  color: rgb(56 189 248 / var(--tw-text-opacity));
+}
+
 .antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -697,8 +702,6 @@ video {
   box-sizing: border-box;
   font-family: "Source Code Pro", monospace;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .App {
