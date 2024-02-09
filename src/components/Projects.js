@@ -1,16 +1,16 @@
 import React from "react";
-import ProjectItem from "../components/ProjectItem";
+import ProjectItem from "./ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 
-import "../styles/Projects.css";
+import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id = "projects">
       <div className="projectList">
         {ProjectList.map((project, idx) => {
           return (
-            <ProjectItem id={idx} name={project.name} image={project.image} />
+            <ProjectItem id={idx} key = {idx} name={project.name} image={project.image} />
           );
         })}
       </div>
