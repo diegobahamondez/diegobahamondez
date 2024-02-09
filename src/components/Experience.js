@@ -9,69 +9,90 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Experience() {
   return (
-    <div className="experience" id="experience">
-      <VerticalTimeline lineColor="#3e497a">
-      <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="09/2020 - 09/2023"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Cloud Engineer - COPEC SA
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Santiago, Chile
-          </h4>
-          <p>Designed and developed the backend for 3 projects using Python
-            and several AWS services (Lambda, DynamoDB, API Gateway and many more)
-          </p>
-        </VerticalTimelineElement>
-
+    <div className="experience box-shadow: none" id="experience">
+      <VerticalTimeline lineColor="#94b8a3" layout={"1-column-right"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="09/2019 - 03/2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "transparent", color: "#fff" }}
+          contentStyle={{
+            background: "transparent",
+            color: "white",
+            border: "solid 2px",
+            lineColor: "Transparent",
+          }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-          Python Developer - Steer Davies and Gleave
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Santiago, Chile
-          </h4>
-          <p>
-            Developed an App to estimate product transportation costs using
-              Python, PostgreSQL and PyQT5
+          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
+            Tech Development Engineer
+          </h3 >
+          <company >COPEC SA</company>
+          <h4 className="vertical-timeline-element-subtitle">2020-2023</h4>
+          <p className="text-slate-400">
+            Designed and developed the backend for 3 projects using Python and
+            several AWS services (Lambda, DynamoDB, API Gateway and many more)
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="09/2019 - 03/2020"
-          iconStyle={{ background: "#e9d35b", color: "#fff" }}
+          iconStyle={{ background: "transparent", color: "#fff" }}
+          contentStyle={{
+            background: "transparent",
+            color: "white",
+            border: "solid 2px",
+            lineColor: "Transparent",
+          }}
           icon={<WorkIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
-          Student Researcher - CIMS JRI
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Santiago, Chile
-          </h4>
-          <p>
+          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
+          Python Developer 
+          </h3 >
+          <company >Steer Davies & Gleave</company>
+          <h4 className="vertical-timeline-element-subtitle">2019-2020</h4>
+          <p className="text-slate-400">
+          Developed an App to estimate product transportation costs using
+            Python, PostgreSQL and PyQT5
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: "transparent", color: "#fff" }}
+          contentStyle={{
+            background: "transparent",
+            color: "white",
+            border: "solid 2px",
+            lineColor: "Transparent",
+          }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
+          Student Researcher
+          </h3 >
+          <company >CIMS JRI</company>
+          <h4 className="vertical-timeline-element-subtitle">2018-2019</h4>
+          <p className="text-slate-400">
             Led the development of a groundbreaking viscosity calculation model
-              for flowing fluids, leveraging ultrasonic echo signals.
+            for flowing fluids, leveraging ultrasonic echo signals.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
-          date="2013 - 2019"
-          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: "transparent", color: "#fff" }}
+          contentStyle={{
+            background: "transparent",
+            color: "white",
+            border: "solid 2px",
+            lineColor: "Transparent",
+          }}
           icon={<SchoolIcon />}
         >
-          <h3 className="vertical-timeline-element-title">
+          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
             Electrical Engineering
-          </h3>
-          <p> Universidad de Santiago de Chile</p>
+          </h3 >
+          <company >Universidad de Santiago de Chile</company>
+          <h4 className="vertical-timeline-element-subtitle">2019</h4>
+          <p className="text-slate-400">
+            Specialized in industrial control systems
+          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </div>
