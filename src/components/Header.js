@@ -9,10 +9,10 @@ const Header = () => {
           <a href="/">Diego Bahamondez</a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Cloud Engineer
+          Software Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-        Chilean developer making internet magic happen.
+          Chilean developer making the internet magic happen.
         </p>
       </header>
       <NavigationLinks />
