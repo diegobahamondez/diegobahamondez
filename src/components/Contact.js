@@ -28,10 +28,10 @@ export default function Contact() {
         id="contact"
         className="min-h-screen mb-0 mt-36 scroll-mt-16 lg:py-24 lg:scroll-mt-24"
       >
-        <h1 className="italic pt-10 lg:pt-0 pb-20 text-3xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+        <h1 className="italic pt-10 lg:pt-0 pb-20 text-3xl font-bold tracking-tight text-gray-200 sm:text-5xl mt-0">
           <a href="/">__Contact</a>
         </h1>
-        <p className="pb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        <p className="pb-4 text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl">
           Hola!
         </p>
         <div className="mb-4 pt-20 text-lg">

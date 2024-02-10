@@ -10,7 +10,7 @@ import WorkIcon from "@material-ui/icons/Work";
 function Experience() {
   return (
     <div id="experience" className="experience box-shadow: none">
-      <h1 className="italic pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+      <h1 className="italic pb-20 text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl mt-0">
         <a href="/">__Experience</a> 
       </h1>
       <VerticalTimeline lineColor="#94b8a3" layout={"1-column-right"}>
@@ -30,7 +30,7 @@ function Experience() {
           </h3 >
           <company >COPEC SA</company>
           <h4 className="vertical-timeline-element-subtitle">2020-2023</h4>
-          <p className="text-slate-400">
+          <p className="text-gray-400">
             Designed and developed the backend for 3 projects using Python and
             several AWS services (Lambda, DynamoDB, API Gateway and more)
           </p>
@@ -51,7 +51,7 @@ function Experience() {
           </h3 >
           <company >Steer Davies & Gleave</company>
           <h4 className="vertical-timeline-element-subtitle">2019-2020</h4>
-          <p className="text-slate-400">
+          <p className="text-gray-400">
           Developed an App to estimate product transportation costs using
             Python, PostgreSQL and PyQT5
           </p>
@@ -72,7 +72,7 @@ function Experience() {
           </h3 >
           <company >CIMS JRI</company>
           <h4 className="vertical-timeline-element-subtitle">2018-2019</h4>
-          <p className="text-slate-400">
+          <p className="text-gray-400">
             Led the development of a groundbreaking viscosity calculation model
             for flowing fluids, leveraging ultrasonic echo signals.
           </p>
@@ -93,7 +93,7 @@ function Experience() {
           </h3 >
           <company >Universidad de Santiago de Chile</company>
           <h4 className="vertical-timeline-element-subtitle">2019</h4>
-          <p className="text-slate-400">
+          <p className="text-gray-400">
             Specialized in industrial control systems
           </p>
         </VerticalTimelineElement>

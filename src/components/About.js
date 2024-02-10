@@ -18,7 +18,7 @@ export default function About() {
   return (
     <>
       <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
-        <h1 className="italic pb-10 lg:pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+        <h1 className="italic pb-10 lg:pb-20 text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl mt-0">
           <a href="/">__About</a>
         </h1>
         <p className="mb-4">

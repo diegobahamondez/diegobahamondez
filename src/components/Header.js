@@ -5,15 +5,12 @@ const Header = () => {
   return (
     <div >
       <header className=" text-white p-4 pt-0 ">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+        <h1 className="text-3xl font-bold tracking-tight text-gray-200 sm:text-5xl mt-0">
           <a href="/">Diego Bahamondez</a>
         </h1>
-        <h2 className="pt-20 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
+        <h2 className="pt-10 lg:pt-20 text-lg font-medium tracking-tight text-gray-200 sm:text-xl">
           Software Developer
         </h2>
-        <p className="mt-4 max-w-xs leading-normal">
-          Chilean developer making the internet magic happen.
-        </p>
       </header>
       <NavigationLinks />
     </div>
