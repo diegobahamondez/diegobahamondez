@@ -18,15 +18,15 @@ export default function Contact() {
         <h1 className="italic pt-10 lg:pt-0 pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
           <a href="/">__Contact</a>
         </h1>
-        <p className="pt-2 mb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
+        <p className="pt-2 pb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           Hola!
         </p>
-        <div className="mb-4 pt-2 text-lg">
+        <div className="mb-4 pt-20 text-lg">
           Whether you need a website or just want to say hello, let's be in
           touch! Just click one of these:
         </div>
 
-        <div className="mb-4 pt-5 pb-0">
+        <div className="mb-4 pt-20 pb-0">
           <MailIcon
             onClick={redirectToMail}
             className="transition-colors duration-300 ease-in-out hover:text-white"
