@@ -32,7 +32,7 @@ function Experience() {
           <h4 className="vertical-timeline-element-subtitle">2020-2023</h4>
           <p className="text-slate-400">
             Designed and developed the backend for 3 projects using Python and
-            several AWS services (Lambda, DynamoDB, API Gateway and many more)
+            several AWS services (Lambda, DynamoDB, API Gateway and more)
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
