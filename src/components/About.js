@@ -6,6 +6,9 @@ export default function About() {
   return (
     <>
       <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <h1 className="italic pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+          <a href="/">__About</a> 
+        </h1>
         <p className="mb-4">
           Electrical Engineer, with 3+ years of experience in backend
           development with Python and AWS
@@ -21,6 +24,9 @@ export default function About() {
           SQL, YAML (for infrastructure as code), Arduino and now delving into
           frontend development with React.
         </p>
+        <div className="mb-4 pt-20 text-lg">
+          -------------stack-----------
+        </div>
       </section>
     </>
   );
