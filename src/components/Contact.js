@@ -12,10 +12,10 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="min-h-screen mb-0 mt-36 scroll-mt-16 md:mb-18 lg:mb-0 lg:py-24
+        className="min-h-screen mb-0 mt-36 scroll-mt-16 lg:py-24
          lg:scroll-mt-24"
       >
-        <h1 className="italic pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
+        <h1 className="italic pt-10 lg:pt-0 pb-20 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl mt-0">
           <a href="/">__Contact</a>
         </h1>
         <p className="pt-2 mb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
