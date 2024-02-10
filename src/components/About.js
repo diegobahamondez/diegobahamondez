@@ -8,11 +8,11 @@ export default function About() {
     "AWS Lambda",
     "React",
     "DynamoDB",
-    "Serverless Framework",
     "TailwindCSS",
     "Flask",
     "Docker",
     "Github Actions",
+    "Serverless Framework",
   ];
 
   return (
@@ -28,9 +28,9 @@ export default function About() {
           expand my skill set and create Full-Stack digital solutions.
         </p>
         <p className="mb-4">
-          I work passionately with agile software development on multicultural
-          teams, speaking directly with customers to fully understand the
-          business needs.
+          "I identify as a customer-centric developer, engaging with clients to
+          thoroughly comprehend their business requirements. Here are some of the
+          tools I use:
         </p>
         <p className="mb-0">
         </p>
