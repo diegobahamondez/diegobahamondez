@@ -28,7 +28,7 @@ export default function About() {
           expand my skill set and create Full-Stack digital solutions.
         </p>
         <p className="mb-4">
-          "I identify as a customer-centric developer, engaging with clients to
+          I identify as a customer-centric developer, engaging with clients to
           thoroughly comprehend their business requirements. Here are some of the
           tools I use:
         </p>
