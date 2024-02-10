@@ -10,7 +10,7 @@ const NavigationLinks = () => {
             to="about"
             smooth={true}
             duration={500}
-            className="paragraph hover"
+            className="transition-colors duration-300 ease-in-out hover:text-white"
           >
             About
           </ScrollLink>
@@ -20,7 +20,7 @@ const NavigationLinks = () => {
             to="experience"
             smooth={true}
             duration={500}
-            className="paragraph hover"
+            className="transition-colors duration-300 ease-in-out hover:text-white"
           >
             Experience
           </ScrollLink>
@@ -30,7 +30,7 @@ const NavigationLinks = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="paragraph hover"
+            className="transition-colors duration-300 ease-in-out hover:text-white"
           >
             Contact
           </ScrollLink>
