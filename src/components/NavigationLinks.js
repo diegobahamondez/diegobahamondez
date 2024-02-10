@@ -1,43 +1,35 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import "./NavigationLinks.css";
 
 const NavigationLinks = () => {
+  const links = [
+    { to: "about", label: "About" },
+    { to: "experience", label: "Experience" },
+    { to: "contact", label: "Contact" },
+  ];
+
   return (
     <nav className="p-4">
       <ul className="flex flex-col items-start space-y-4">
-        <li>
-          <ScrollLink
-            to="about"
-            smooth={true}
-            duration={500}
-            className="transition-colors duration-300 ease-in-out hover:text-white"
-          >
-            About
-          </ScrollLink>
-        </li>
-        <li>
-          <ScrollLink
-            to="experience"
-            smooth={true}
-            duration={500}
-            className="transition-colors duration-300 ease-in-out hover:text-white"
-          >
-            Experience
-          </ScrollLink>
-        </li>
-        <li>
-          <ScrollLink
-            to="contact"
-            smooth={true}
-            duration={500}
-            className="transition-colors duration-300 ease-in-out hover:text-white"
-          >
-            Contact
-          </ScrollLink>
-        </li>
+        {links.map((link, index) => (
+          <li key={index}>
+            <ScrollLink
+              to={link.to}
+              smooth={true}
+              duration={500}
+              className="glass-button"
+              activeClassName="pressed"
+            >
+              {link.label}
+            </ScrollLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );
 };
 
 export default NavigationLinks;
+
+
