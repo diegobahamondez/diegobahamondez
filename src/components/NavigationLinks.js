@@ -27,12 +27,12 @@ const NavigationLinks = () => {
         </li>
         <li>
           <ScrollLink
-            to="projects"
+            to="contact"
             smooth={true}
             duration={500}
             className="paragraph hover"
           >
-            Projects
+            Contact
           </ScrollLink>
         </li>
       </ul>

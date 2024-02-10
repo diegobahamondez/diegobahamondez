@@ -9,7 +9,7 @@ import WorkIcon from "@material-ui/icons/Work";
 
 function Experience() {
   return (
-    <div className="experience box-shadow: none" id="experience">
+    <div id="experience" className="experience box-shadow: none">
       <VerticalTimeline lineColor="#94b8a3" layout={"1-column-right"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

@@ -10,7 +10,7 @@ import {
 export default function Contact() {
   return (
     <>
-      <section className="mt-36 scroll-mt-16 md:mb-18 lg:mb-36 lg:scroll-mt-24">
+      <section id="contact" className="mt-36 scroll-mt-16 md:mb-18 lg:mb-36 lg:scroll-mt-24">
         <p className="mb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           Hola!
         </p>
