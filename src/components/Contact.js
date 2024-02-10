@@ -1,6 +1,11 @@
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GithubIcon from "@material-ui/icons/GitHub";
-import { redirectToLinkedIn, redirectToGithub } from "../helpers/Redirects";
+import MailIcon from "@material-ui/icons/Mail";
+import {
+  redirectToLinkedIn,
+  redirectToGithub,
+  redirectToMail,
+} from "../helpers/Redirects";
 
 export default function Contact() {
   return (
@@ -9,19 +14,26 @@ export default function Contact() {
         <p className="mb-4 text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           Hola!
         </p>
-        <div className="mb-4 pt-20">
-          whether you need a website or just want to say hello, let's be in touch! just click one of these:
+        <div className="mb-4 pt-20 text-lg">
+          Whether you need a website or just want to say hello, let's be in
+          touch! Just click one of these:
         </div>
-        <div className="mb-4">
-          <mail className="mb-4">
-            mail
-          </mail>
-          <linkedin className="mb-4">
-            linkedin
-          </linkedin>
-          <github className="mb-4">
-            github
-          </github>
+        <div className="mb-4 pt-20 pb-10">
+          <MailIcon
+            onClick={redirectToMail}
+            className="transition-colors duration-300 ease-in-out hover:text-white"
+            style={{ fontSize: "2rem", marginRight: "1rem" }}
+          />
+          <LinkedInIcon
+            onClick={redirectToLinkedIn}
+            className="transition-colors duration-300 ease-in-out hover:text-white"
+            style={{ fontSize: "2rem", marginRight: "1rem" }}
+          />
+          <GithubIcon
+            onClick={redirectToGithub}
+            className="transition-colors duration-300 ease-in-out hover:text-white"
+            style={{ fontSize: "2rem" }}
+          />
         </div>
       </section>
     </>
