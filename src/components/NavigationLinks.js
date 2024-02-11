@@ -1,5 +1,6 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
+import "../styles/Button.css";
 
 const NavigationLinks = () => {
   const links = [
@@ -18,10 +19,10 @@ const NavigationLinks = () => {
               smooth={true}
               spy={true}
               duration={500}
-              className="bg-green-300 bg-opacity-30 hover:bg-green-600 hover:bg-opacity-30 text-white font-bold py-1 my-0 px-2 rounded "
-              activeClassName="bg-blue-100"
+              className=""
+              activeclassname="bg-blue-100"
             >
-              {link.label}
+              <button class="nav-button">{link.label}</button>
             </ScrollLink>
           </li>
         ))}
@@ -31,3 +32,15 @@ const NavigationLinks = () => {
 };
 
 export default NavigationLinks;
+/*
+<!-- HTML !-->
+<button class="button-82-pushable" role="button">
+  <span class="button-82-shadow"></span>
+  <span class="button-82-edge"></span>
+  <span class="button-82-front text">
+    Button 82
+  </span>
+</button>
+
+
+*/

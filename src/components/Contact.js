@@ -26,32 +26,32 @@ export default function Contact() {
     <>
       <section
         id="contact"
-        className="min-h-screen mb-0 mt-36 scroll-mt-16 lg:py-24 lg:scroll-mt-24"
+        className="min-h-screen mb-0 sm:mt-36 scroll-mt-16 sm:py-24 sm:scroll-mt-24"
       >
-        <h1 className="italic pt-10 lg:pt-0 pb-20 text-3xl font-bold tracking-tight text-gray-200 sm:text-5xl mt-0">
+        <h1 className="italic pt-10 sm:pt-0 pb-20 sm:pb-20 text-3xl sm:text-5xl font-bold tracking-tight text-gray-200 mt-0">
           <a href="/">__Contact</a>
         </h1>
-        <p className="pb-4 text-4xl font-bold tracking-tight text-gray-200 sm:text-5xl">
+        <p className="pb-20 sm:pb-20 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
           Hola!
         </p>
-        <div className="mb-4 pt-20 text-lg">
+        <div className="pb-20  sm:pb-10 text-lg">
           Whether you need a website or just want to say hello, let's be in
           touch! Just click one of these:
         </div>
 
-        <div className="mb-4 pt-10 pb-0">
+        <div className="sm:pt-10 sm:pb-0">
           {contactItems.map((item, index) => (
             React.cloneElement(item.icon, {
               key: index,
               onClick: item.onClick,
-              className: "transition-colors duration-300 ease-in-out hover:text-white",
+              className: "transition-all duration-300 ease-in-out hover:text-green-950 hover:bg-white hover:rounded p-1",
               style: { fontSize: item.fontSize, marginRight: "1rem" },
             })
           ))}
         </div>
         <div className="absolute bottom-0 pb-10 left-0 text-justify">
           <p className="flex">
-            &copy; version 0.3.0, 2024, made with React JS and TailwindCSS.
+            version 0.3.0, 2024, made with React JS and TailwindCSS.
             Hosted on AWS. Deployed with Github Actions.
           </p>
         </div>

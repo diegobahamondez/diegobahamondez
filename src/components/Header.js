@@ -12,7 +12,9 @@ const Header = () => {
           Software Developer
         </h2>
       </header>
-      <NavigationLinks />
+      <hidenavs className = "invisible md:visible">
+        <NavigationLinks />
+      </hidenavs>
     </div>
   );
 };

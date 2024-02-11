@@ -1,103 +1,66 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
+import SchoolIcon from "@material-ui/icons/School";
+
+const experiences = [
+  {
+    title: "Tech Development Engineer",
+    company: "COPEC SA",
+    date: "2020-2023",
+    description:
+      "Designed and developed the backend for 3 projects using Python and several AWS services (Lambda, DynamoDB, API Gateway and more)",
+    icon: <WorkIcon className="text-green-400" />,
+  },
+  {
+    title: "Python Developer",
+    company: "Steer Davies & Gleave",
+    date: "2019-2020",
+    description:
+      "Developed an App to estimate product transportation costs using Python, PostgreSQL, and PyQT5",
+    icon: <WorkIcon className="text-green-400" />,
+  },
+  {
+    title: "Student Researcher",
+    company: "CIMS JRI",
+    date: "2018-2019",
+    description:
+      "Led the development of a groundbreaking viscosity calculation model for flowing fluids, leveraging ultrasonic echo signals.",
+    icon: <WorkIcon className="text-green-400" />,
+  },
+  {
+    title: "Electrical Engineering",
+    company: "Universidad de Santiago de Chile",
+    date: "2013-2019",
+    description: "Specialized in industrial control systems",
+    icon: <SchoolIcon className="text-green-400" />,
+  },
+];
 
 function Experience() {
   return (
-    <div id="experience" className="experience box-shadow: none">
-      <h1 className="italic pb-20 text-4xl font-bold tracking-tight text-gray-200 sm:text-4xl mt-0">
-        <a href="/">__Experience</a> 
+    <div id="experience" className="experience lg:pt-24">
+      <h1 className="italic  pb-10 sm:pb-20 text-3xl sm:text-5xl font-bold tracking-tight text-gray-200 mt-0">
+        <a href="/">__Experience</a>
       </h1>
-      <VerticalTimeline lineColor="#94b8a3" layout={"1-column-right"}>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          iconStyle={{ background: "transparent", color: "#fff" }}
-          contentStyle={{
-            background: "transparent",
-            color: "white",
-            border: "solid 2px",
-            lineColor: "Transparent",
-          }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
-            Tech Development Engineer
-          </h3 >
-          <company >COPEC SA</company>
-          <h4 className="vertical-timeline-element-subtitle">2020-2023</h4>
-          <p className="text-gray-400">
-            Designed and developed the backend for 3 projects using Python and
-            several AWS services (Lambda, DynamoDB, API Gateway and more)
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          iconStyle={{ background: "transparent", color: "#fff" }}
-          contentStyle={{
-            background: "transparent",
-            color: "white",
-            border: "solid 2px",
-            lineColor: "Transparent",
-          }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
-          Python Developer 
-          </h3 >
-          <company >Steer Davies & Gleave</company>
-          <h4 className="vertical-timeline-element-subtitle">2019-2020</h4>
-          <p className="text-gray-400">
-          Developed an App to estimate product transportation costs using
-            Python, PostgreSQL and PyQT5
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          iconStyle={{ background: "transparent", color: "#fff" }}
-          contentStyle={{
-            background: "transparent",
-            color: "white",
-            border: "solid 2px",
-            lineColor: "Transparent",
-          }}
-          icon={<WorkIcon />}
-        >
-          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
-          Student Researcher
-          </h3 >
-          <company >CIMS JRI</company>
-          <h4 className="vertical-timeline-element-subtitle">2018-2019</h4>
-          <p className="text-gray-400">
-            Led the development of a groundbreaking viscosity calculation model
-            for flowing fluids, leveraging ultrasonic echo signals.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          iconStyle={{ background: "transparent", color: "#fff" }}
-          contentStyle={{
-            background: "transparent",
-            color: "white",
-            border: "solid 2px",
-            lineColor: "Transparent",
-          }}
-          icon={<SchoolIcon />}
-        >
-          <h3 className="vertical-timeline-element-title text-sky-400 font-bold text-lg">
-            Electrical Engineering
-          </h3 >
-          <company >Universidad de Santiago de Chile</company>
-          <h4 className="vertical-timeline-element-subtitle">2019</h4>
-          <p className="text-gray-400">
-            Specialized in industrial control systems
-          </p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
+
+      <div className="grid grid-cols-1 gap-8">
+        {experiences.map((experience, index) => (
+          <div key={index} className="mb-8">
+            <div className="flex items-center">
+              {experience.icon}
+              <h3 className="ml-2 text-green-400 font-bold text-lg">
+                {experience.title}
+              </h3>
+            </div>
+            <p className="text-gray-400">
+              <span className="font-bold">{experience.company}</span>
+              <br />
+              {experience.date}
+            </p>
+            <p className="text-gray-400">{experience.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
