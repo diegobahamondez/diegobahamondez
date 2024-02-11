@@ -722,6 +722,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.pl-4{
+  padding-left: 1rem;
+}
+
 .text-justify{
   text-align: justify;
 }
@@ -921,5 +925,9 @@ video {
 
   .lg\:pt-24{
     padding-top: 6rem;
+  }
+
+  .lg\:pl-0{
+    padding-left: 0px;
   }
 }

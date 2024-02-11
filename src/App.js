@@ -44,7 +44,7 @@ const App = () => {
           </header>
           <main
             id="about"
-            className="relative flex flex-col right-0 pb-0px pt-12 lg:pt-24 lg:w-1/2"
+            className="relative flex flex-col right-0 pl-4 lg:pl-0 pb-0px pt-12 lg:pt-24 lg:w-1/2"
           >
             <About />
             <Experience />
