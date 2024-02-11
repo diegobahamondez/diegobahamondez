@@ -48,7 +48,7 @@ function Experience() {
           <div key={index} className="mb-8">
             <div className="flex items-center">
               {experience.icon}
-              <h3 className="ml-2 text-green-400 font-bold text-lg">
+              <h3 className="ml-2 text-green-600 font-bold text-lg">
                 {experience.title}
               </h3>
             </div>

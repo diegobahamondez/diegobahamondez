@@ -4,9 +4,9 @@ import "../styles/Button.css";
 
 const NavigationLinks = () => {
   const links = [
-    { to: "about", label: "About" },
-    { to: "experience", label: "Experience" },
-    { to: "contact", label: "Contact" },
+    { to: "about", label: "__About" },
+    { to: "experience", label: "__Experience" },
+    { to: "contact", label: "__Contact" },
   ];
 
   return (
@@ -32,15 +32,3 @@ const NavigationLinks = () => {
 };
 
 export default NavigationLinks;
-/*
-<!-- HTML !-->
-<button class="button-82-pushable" role="button">
-  <span class="button-82-shadow"></span>
-  <span class="button-82-edge"></span>
-  <span class="button-82-front text">
-    Button 82
-  </span>
-</button>
-
-
-*/
