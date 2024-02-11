@@ -30,10 +30,10 @@ const App = () => {
   const gradientStyle = {
     background: `radial-gradient(600px at ${cursorPosition.x}px ${
       cursorPosition.y + scrollPosition
-    }px, #183057, transparent 80%)`,
+    }px, #2C001E, transparent 80%)`,
   };
   return (
-    <div id="background" className="bg-gradbg text-gray-200">
+    <div id="background" className="bg-black text-gray-200">
       <section id="gradient" style={gradientStyle}>
         <div
           id="content"
