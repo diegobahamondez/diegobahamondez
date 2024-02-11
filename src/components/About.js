@@ -6,18 +6,18 @@ export default function About() {
   const stackTechnologies = [
     "Python",
     "AWS Lambda",
-    "React",
     "DynamoDB",
+    "Serverless Framework",
+    "React",
     "TailwindCSS",
     "Flask",
     "Docker",
     "Github Actions",
-    "Serverless Framework",
   ];
 
   return (
     <>
-      <section className="mb-16 scroll-mt-16 md:mb-24 lg:scroll-mt-24">
+      <section className="mb-24 scroll-mt-16 md:mb-24 lg:scroll-mt-24">
         <h1 className="italic pb-10 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight text-gray-200 mt-0">
           <a href="/">__About</a>
         </h1>

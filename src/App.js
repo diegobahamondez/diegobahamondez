@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import About from "./components/About";
 import Experience from "./components/Experience";
-//import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 
 const App = () => {
@@ -33,23 +33,26 @@ const App = () => {
     }px, #123b01, transparent 80%)`,
   };
   return (
-    <div className="bg-green-950 text-gray-200">
-      <section style={gradientStyle}>
-        <div className="pb-0 min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:pt-20 lg:px-24 lg:py-0">
-          <div className="lg:flex lg:justify-between lg:gap-4">
-            <header className=" lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
-              <Header />
-            </header>
-            <main id="about" className="right-0 pb-0px pt-12 lg:pt-24 lg:w-1/2">
-              <About />
-              <Experience />
-              <div className="">
-                <div className="relative">
-                  <Contact />
-                </div>
-              </div>
-            </main>
-          </div>
+    <div id="background" className="bg-green-950 text-gray-200">
+      <section id="gradient" style={gradientStyle}>
+        <div
+          id="content"
+          className="lg:flex pb-0 min-h-screen max-w-screen px-6 py-12 md:px-12 md:pt-20 lg:px-24 lg:py-0"
+        >
+          <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2  lg:justify-between lg:py-24">
+            <Header />
+          </header>
+          <main
+            id="about"
+            className="relative flex flex-col right-0 pb-0px pt-12 lg:pt-24 lg:w-1/2"
+          >
+            <About />
+            <Experience />
+            <div className="min-h-screen pt-24">
+              <Contact />
+              <Footer />
+            </div>
+          </main>
         </div>
       </section>
     </div>

@@ -43,7 +43,7 @@ function Experience() {
         <a href="/">__Experience</a>
       </h1>
 
-      <div className="grid grid-cols-1 gap-8">
+      <div className="grid grid-cols-1 gap-6">
         {experiences.map((experience, index) => (
           <div key={index} className="mb-8">
             <div className="flex items-center">

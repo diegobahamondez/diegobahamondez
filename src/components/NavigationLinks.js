@@ -11,7 +11,7 @@ const NavigationLinks = () => {
 
   return (
     <nav className="p-4">
-      <ul className="flex flex-col items-start space-y-4">
+      <ul className="flex-col items-start space-y-4">
         {links.map((link, index) => (
           <li key={index}>
             <ScrollLink
@@ -20,7 +20,7 @@ const NavigationLinks = () => {
               spy={true}
               duration={500}
               className=""
-              activeclassname="bg-blue-100"
+              activeclassname="active"
             >
               <button class="nav-button">{link.label}</button>
             </ScrollLink>
