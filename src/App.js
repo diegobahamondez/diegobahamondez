@@ -30,10 +30,10 @@ const App = () => {
   const gradientStyle = {
     background: `radial-gradient(600px at ${cursorPosition.x}px ${
       cursorPosition.y + scrollPosition
-    }px, #123b01, transparent 80%)`,
+    }px, #183057, transparent 80%)`,
   };
   return (
-    <div id="background" className="bg-green-950 text-gray-200">
+    <div id="background" className="bg-gradbg text-gray-200">
       <section id="gradient" style={gradientStyle}>
         <div
           id="content"
@@ -44,7 +44,7 @@ const App = () => {
           </header>
           <main
             id="about"
-            className="relative flex flex-col right-0 pl-4 lg:pl-0 pb-0px pt-12 lg:pt-24 lg:w-1/2"
+            className="relative flex flex-col right-0 px-4 lg:px-0 pb-0px pt-12 lg:pt-24 lg:w-1/2 text-justify"
           >
             <About />
             <Experience />
