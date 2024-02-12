@@ -743,6 +743,10 @@ video {
   padding-top: 0.75rem;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-justify{
   text-align: justify;
 }
