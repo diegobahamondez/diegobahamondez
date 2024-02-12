@@ -55,7 +55,7 @@ const Contact = () => {
                   style: { fontSize: item.fontSize },
                 })}
               </div>
-              <span className="pl-3 hover:underline decoration-solid">
+              <span className="pl-3 text-xs sm:text-base hover:underline decoration-solid">
                 {item.text}
               </span>
               <span className="pl-2 hover:scale-150">&#8599;</span>
