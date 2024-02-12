@@ -4,6 +4,8 @@ import About from "./components/About";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import "./styles/Backgrounds.css";
+import "./styles/BorderGradient.css";
 
 const App = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -28,7 +30,7 @@ const App = () => {
   }, []);
 
   const gradientStyle = {
-    background: `radial-gradient(600px at ${cursorPosition.x}px ${
+    background: `radial-gradient(200px at ${cursorPosition.x}px ${
       cursorPosition.y + scrollPosition
     }px, #2C001E, transparent 80%)`,
   };

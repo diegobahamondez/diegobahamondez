@@ -1,5 +1,6 @@
 import React from "react";
 import NavigationLinks from "./NavigationLinks";
+import "../styles/BorderGradient.css";
 
 const Header = () => {
   return (
