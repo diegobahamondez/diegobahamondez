@@ -13,6 +13,8 @@ export default function About() {
     "Flask",
     "Docker",
     "Github Actions",
+    "PostgreSQL",
+    "GraphQL",
   ];
 
   return (
@@ -22,15 +24,16 @@ export default function About() {
           <a href="/">__About</a>
         </h1>
         <p className="mb-4">
-          Electrical Engineer by profession, I first encountered Python in 2019
-          while working on my university thesis. Since then, I have been using
-          it for backend development. Currently, I am learning React to expand
-          my skill set and create Full-Stack digital solutions.
+          Back in 2019, I first encountered Python while working on my
+          university thesis for ultrasound signal analysis. Since then, I have
+          been using it for backend development in four projects at some of the
+          biggest companies in Chile. Currently, I am expanding my skill set
+          with React to create full-stack digital solutions.
         </p>
         <p className="mb-4">
           I identify as a customer-centric developer, engaging with clients to
           thoroughly comprehend their business requirements. Here are some of
-          the tools I use:
+          the tools I use to address them:
         </p>
         <p className="mb-0"></p>
         <div className="mb-4 pt-3 text-lg">

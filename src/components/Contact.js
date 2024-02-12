@@ -39,7 +39,7 @@ export default function Contact() {
           </p>
           <div className="text-lg pb-12">
             Whether you need a developer or just want to say hello, let's be in
-            touch! Just click one of these:
+            touch!
           </div>
 
           <div className="">

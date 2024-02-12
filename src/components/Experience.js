@@ -11,7 +11,7 @@ const experiences = [
     company: "COPEC SA",
     date: "2020-2023",
     description:
-      "Developed the backend for 3 projects using Python and several AWS services (Lambda, DynamoDB, API Gateway and more).",
+      "Backend developer for three serverless projects with a focus on IoT, Energy Efficiency, and Civil Engineering Project Management. Used technologies include Python, GraphQL, AWS Lambda, DynamoDB, and API Gateway.",
     icon: <WorkIcon className={TextIconColor} />,
   },
   {
@@ -19,7 +19,7 @@ const experiences = [
     company: "Steer Davies & Gleave",
     date: "2019-2020",
     description:
-      "Developed an App to estimate product transportation costs using Python, PostgreSQL, and PyQT5.",
+      "Developed an app for the Ministry of Transportation of Chile to estimate product transportation costs using Python, PostgreSQL, and PyQt5.",
     icon: <WorkIcon className={TextIconColor} />,
   },
   {
@@ -27,15 +27,15 @@ const experiences = [
     company: "CIMS JRI",
     date: "2018-2019",
     description:
-      "Led the development of a groundbreaking viscosity calculation model for flowing fluids, leveraging ultrasonic echo signals.",
+      "Implemented a laboratory for viscosity measurement with ultrasonic signal generators and oscilloscopes, and utilized Python's scientific libraries for signal analysis and viscosity calculations.",
     icon: <WorkIcon className={TextIconColor} />,
   },
   {
     title: "Electrical Engineering",
     company: "Universidad de Santiago de Chile",
-    date: "2013-2019",
+    date: "2019",
     description:
-      "Specialized in industrial control systems, learned several programming languages and won the electrical engineering fair in the innovation category.",
+      "Specialized in industrial control systems, learned several programming languages and won the 2016's electrical engineering fair in the innovation category.",
     icon: <SchoolIcon className={TextIconColor} />,
   },
 ];
