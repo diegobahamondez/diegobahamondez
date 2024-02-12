@@ -610,6 +610,10 @@ video {
   min-height: 100vh;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .scroll-mt-16{
   scroll-margin-top: 4rem;
 }
@@ -729,6 +733,18 @@ video {
 
 .pt-3{
   padding-top: 0.75rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pl-5{
+  padding-left: 1.25rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
 }
 
 .text-justify{
