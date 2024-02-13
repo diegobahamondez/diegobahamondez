@@ -1,0 +1,9 @@
+
+.title-lcd {
+  background: url("../assets/lcd.svg");
+}
+
+.experience-item {
+  background-color: black;
+  border: 10px outset rgb(103, 103, 103);
+}

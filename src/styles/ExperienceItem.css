@@ -1,0 +1,17 @@
+.outer-border {
+  border: 8px dashed rgb(113 113 112);
+  border-color: rgb(113 113 122);
+}
+
+.experience-item {
+  background-color: black;
+  border: 10px outset rgb(103, 103, 103);
+}
+
+.experience-item-old {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-radius: 4px;
+  border-image-source: linear-gradient(to left, orange, purple);
+}

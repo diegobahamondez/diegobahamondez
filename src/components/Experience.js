@@ -2,6 +2,7 @@ import React from "react";
 import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
 import "../styles/BorderGradient.css";
+import "../styles/ExperienceItem.css";
 
 const TextIconColor = "text-white";
 
@@ -49,11 +50,11 @@ function Experience() {
 
       <div className="grid grid-cols-1 gap-6 ">
         {experiences.map((experience, index) => (
-          <div key={index} className="mb-6 p-2 border-gradient-purple">
+          <borderic className = "outer-border">
+          <div key={index} className="pb-4 p-2 experience-item">
             {experience.date}
             <div className="flex items-center">
-              {experience.icon}
-              <h3 className={`ml-2 ${TextIconColor} font-bold text-lg`}>
+              <h3 className={`${TextIconColor} font-bold text-lg`}>
                 {experience.title}
               </h3>
             </div>
@@ -62,6 +63,7 @@ function Experience() {
             </p>
             <p className="text-gray-400">{experience.description}</p>
           </div>
+          </borderic>
         ))}
       </div>
     </div>
