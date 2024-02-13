@@ -622,6 +622,10 @@ video {
   align-items: center;
 }
 
+.justify-center{
+  justify-content: center;
+}
+
 .justify-between{
   justify-content: space-between;
 }
@@ -898,6 +902,16 @@ video {
 
 .shadow-slate-400{
   --tw-shadow-color: #94a3b8;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-slate-400\/50{
+  --tw-shadow-color: rgb(148 163 184 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-gray-100\/30{
+  --tw-shadow-color: rgb(243 244 246 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
