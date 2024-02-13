@@ -48,17 +48,17 @@ const Contact = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center cursor-pointer"
+              className="group flex items-center cursor-pointer"
             >
-              <div className="transition-all duration-300 ease-in-out hover:text-green-950 hover:bg-white hover:rounded p-1">
+              <div className="rounded p-1 transition-all duration-300 ease-in-out group-hover:text-green-950 group-hover:bg-white">
                 {React.cloneElement(item.icon, {
                   style: { fontSize: item.fontSize },
                 })}
               </div>
-              <span className="pl-3 text-xs sm:text-base hover:underline decoration-solid">
+              <span className="pl-3 text-xs sm:text-base group-hover:underline decoration-solid">
                 {item.text}
               </span>
-              <span className="pl-2 hover:scale-150">&#8599;</span>
+              <span className="pl-2 group-hover:scale-150">&#8599;</span>
 
             </a>
           ))}

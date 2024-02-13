@@ -50,8 +50,8 @@ function Experience() {
 
       <div className="grid grid-cols-1 gap-6 ">
         {experiences.map((experience, index) => (
-          <borderic className = "outer-border">
-          <div key={index} className="pb-4 p-2 experience-item">
+          <borderic className = "">
+          <div key={index} className="pb-4 p-2 bg-slate-800/30 backdrop-blur-sm shadow-sm shadow-slate-400/50 rounded-lg">
             {experience.date}
             <div className="flex items-center">
               <h3 className={`${TextIconColor} font-bold text-lg`}>
