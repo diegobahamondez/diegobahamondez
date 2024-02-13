@@ -36,7 +36,6 @@ const App = () => {
   };
   return (
     <div id="background" className="PCBBlue text-gray-200">
-      <section id="gradient" style={gradientStyle}>
         <div
           id="content"
           className="lg:flex pb-0 min-h-screen max-w-screen px-6 py-12 md:px-12 md:pt-20 lg:px-24 lg:py-0"
@@ -56,7 +55,6 @@ const App = () => {
             </div>
           </main>
         </div>
-      </section>
     </div>
   );
 };
