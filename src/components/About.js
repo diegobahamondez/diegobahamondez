@@ -36,7 +36,7 @@ export default function About() {
           {stackTechnologies.map((tech, index) => (
             <div
               key={index}
-              className=" bg-gray-100 opacity:50 shadow-lg shadow-gray-100/30 py-1 px-2 rounded-full text-linux text-opacity-100 mr-2 my-2 inline-block "
+              className=" bg-slate-800/70 backdrop-blur-sm shadow-lg shadow-gray-100/30 py-1 px-2 rounded-full text-blue mr-2 my-2 inline-block "
             >
               {tech}
             </div>

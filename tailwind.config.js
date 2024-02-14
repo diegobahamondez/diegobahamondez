@@ -7,7 +7,8 @@ export const theme = {
       gradbg: "#1B1E24",
       pgreen: "#7DC9B",
       textcontainer: "#23272F",
-      reactButton: "#087ea4"
+      reactButton: "#087ea4",
+      tft: "#0D202B",
     },
   },
 };

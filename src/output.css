@@ -657,6 +657,10 @@ video {
   background-color: rgb(30 41 59 / 0.3);
 }
 
+.bg-slate-800\/70{
+  background-color: rgb(30 41 59 / 0.7);
+}
+
 .p-1{
   padding: 0.25rem;
 }
@@ -787,18 +791,9 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
-.text-linux{
-  --tw-text-opacity: 1;
-  color: rgb(79 3 65 / var(--tw-text-opacity));
-}
-
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-opacity-100{
-  --tw-text-opacity: 1;
 }
 
 .decoration-solid{
