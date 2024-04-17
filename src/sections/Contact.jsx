@@ -26,8 +26,8 @@ const contactItems = [
 
 const Contact = () => {
   return (
-    <section id="contact" className="mb-0">
-      <h2 className="italic pb-12 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
+    <section id="contact" className="text-center mb-0">
+      <h2 className="pb-12 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
         <a href="/" className="">
           Contact
         </a>
@@ -47,17 +47,17 @@ const Contact = () => {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center cursor-pointer"
+              className="group flex justify-center cursor-pointer"
             >
               <div className="rounded p-1 transition-all duration-300 ease-in-out group-hover:text-base-100  group-hover:bg-base-content">
                 {React.cloneElement(item.icon, {
                   style: { fontSize: item.fontSize },
                 })}
               </div>
-              <span className="pl-3 text-xs sm:text-base group-hover:underline decoration-solid">
+              <div className="my-auto pl-3 text-xs sm:text-base group-hover:underline decoration-solid">
                 {item.text}
-              </span>
-              <span className="pl-2 group-hover:scale-150">&#8599;</span>
+              </div>
+              <div className="my-auto pl-2 group-hover:scale-150">&#8599;</div>
 
             </a>
           ))}

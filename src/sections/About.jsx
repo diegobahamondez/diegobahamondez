@@ -15,7 +15,7 @@ export default function About() {
   return (
     <>
       <section id="about" className="mb-24 scroll-mt-16 md:mb-24 lg:scroll-mt-24 ">
-        <h1 className="italic pb-10 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight">
+        <h1 className="text-center pb-10 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight">
           <a href="/">About</a>
         </h1>
         <div className="p-4 bg-base-200 hover:bg-base-300 hover:shadow-2xl rounded-lg">

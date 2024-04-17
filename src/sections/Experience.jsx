@@ -36,7 +36,7 @@ const experiences = [
 function Experience() {
     return (
       <section id="experience" className="lg:pt-24">
-        <h1 className="italic pb-10 sm:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
+        <h1 className="text-center pb-10 sm:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
           <a href="/">Experience</a>
         </h1>
   
