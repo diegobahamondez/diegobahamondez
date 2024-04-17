@@ -12,7 +12,7 @@ const experiences = [
     company: "COPEC SA",
     date: "2020-2023",
     description:
-      "Backend developer for three serverless projects with a focus on IoT, Energy Efficiency, and Civil Engineering Project Management. Used technologies include Python, GraphQL, AWS Lambda, DynamoDB, and API Gateway.",
+      "Cloud backend developer for three serverless projects with a focus on IoT, Energy Efficiency, and Civil Engineering Project Management. Used technologies include Python, GraphQL, AWS Lambda, DynamoDB, and API Gateway.",
     icon: <WorkIcon className={TextIconColor} />,
   },
   {
@@ -50,19 +50,22 @@ function Experience() {
 
       <div className="grid grid-cols-1 gap-6 ">
         {experiences.map((experience, index) => (
-          <borderic className = "">
-          <div key={index} className="pb-4 p-2 bg-slate-800/30 backdrop-blur-sm shadow-sm shadow-slate-400/50 rounded-lg">
-            {experience.date}
-            <div className="flex items-center">
-              <h3 className={`${TextIconColor} font-bold text-lg`}>
-                {experience.title}
-              </h3>
+          <borderic className="">
+            <div
+              key={index}
+              className="pb-4 p-2 bg-slate-800/30 backdrop-blur-sm shadow-sm shadow-slate-400/50 rounded-lg"
+            >
+              {experience.date}
+              <div className="flex items-center">
+                <h3 className={`${TextIconColor} font-bold text-lg`}>
+                  {experience.title}
+                </h3>
+              </div>
+              <p className="text-gray-200 pb-2">
+                <span className="font-bold">{experience.company}</span>
+              </p>
+              <p className="text-gray-400">{experience.description}</p>
             </div>
-            <p className="text-gray-200 pb-2">
-              <span className="font-bold">{experience.company}</span>
-            </p>
-            <p className="text-gray-400">{experience.description}</p>
-          </div>
           </borderic>
         ))}
       </div>
