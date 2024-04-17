@@ -3,9 +3,9 @@ export default function About() {
     "Python",
     "AWS Lambda",
     "DynamoDB",
+    "Django",
     "React",
     "TailwindCSS",
-    "Flask",
     "Docker",
     "Github Actions",
     "PostgreSQL",
@@ -26,12 +26,12 @@ export default function About() {
           biggest companies in Chile. Currently, I am expanding my skill set
           with React to create full-stack digital solutions.
         </p>
-        <p className="mb-4">
+        <p className="mb-2">
           I identify as a customer-centric developer, engaging with clients to
           thoroughly comprehend their business requirements. Here are some of
           the tools I use to address them:
         </p>
-        <div className="mb-4 pt-3 text-lg ">
+        <div className="mb-4 text-lg ">
           {stackTechnologies.map((tech, index) => (
             <div
               key={index}
