@@ -11,7 +11,7 @@ const App = () => {
     <div id="background" className="bg-base-100 text-center min-h-dvh text-base-content">
         <div
           id="content"
-          className="lg:flex pb-0 min-h-screen max-w-screen px-6 py-12 md:px-12 md:pt-20 lg:px-24 lg:py-0"
+          className="lg:flex pb-0 min-h-screen max-w-screen px-2 py-12 md:px-12 md:pt-20 lg:px-24 lg:py-0"
         >
           <header className="lg:sticky lg:top-0 lg:flex lg:flex-col lg:max-h-screen lg:w-1/2  lg:justify-between lg:py-24">
             <Header/>
