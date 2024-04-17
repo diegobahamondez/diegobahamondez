@@ -1,13 +1,8 @@
-//import LinkedInIcon from "@material-ui/icons/LinkedIn";
-//import GithubIcon from "@material-ui/icons/GitHub";
-//import { redirectToLinkedIn, redirectToGithub } from "../helpers/Redirects";
-
 export default function About() {
   const stackTechnologies = [
     "Python",
     "AWS Lambda",
     "DynamoDB",
-    "Serverless Framework",
     "React",
     "TailwindCSS",
     "Flask",
@@ -19,11 +14,12 @@ export default function About() {
 
   return (
     <>
-      <section className="mb-24 scroll-mt-16 md:mb-24 lg:scroll-mt-24">
-        <h1 className="italic pb-10 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight text-gray-200 mt-0">
-          <a href="/">__About</a>
+      <section id="about" className="mb-24 scroll-mt-16 md:mb-24 lg:scroll-mt-24 ">
+        <h1 className="italic pb-10 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight">
+          <a href="/">About</a>
         </h1>
-        <p className="mb-4">
+        <div className="p-4 bg-base-200 hover:bg-base-300 hover:shadow-2xl rounded-lg">
+        <p className="mb-4 ">
           Back in 2019, I first encountered Python while working on my
           university thesis for ultrasound signal analysis. Since then, I have
           been using it for backend development in four projects at some of the
@@ -35,16 +31,16 @@ export default function About() {
           thoroughly comprehend their business requirements. Here are some of
           the tools I use to address them:
         </p>
-        <p className="mb-0"></p>
-        <div className="mb-4 pt-3 text-lg">
+        <div className="mb-4 pt-3 text-lg ">
           {stackTechnologies.map((tech, index) => (
             <div
               key={index}
-              className=" bg-gray-100 opacity:50 shadow-lg shadow-gray-100/50 py-1 px-2 rounded-full text-linux text-opacity-100 mr-2 my-2 inline-block "
+              className="badge text-base-content badge-lg glass badge-neutral y-1 px-2 mr-2 mt-2"
             >
               {tech}
             </div>
           ))}
+        </div>
         </div>
       </section>
     </>
