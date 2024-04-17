@@ -35,7 +35,7 @@ export default function About() {
           {stackTechnologies.map((tech, index) => (
             <div
               key={index}
-              className="badge text-base-content badge-lg glass badge-neutral y-1 px-2 mr-2 mt-2"
+              className="badge text-success-content badge-lg badge-success y-1 px-2 mr-2 mt-2"
             >
               {tech}
             </div>

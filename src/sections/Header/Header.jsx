@@ -10,7 +10,10 @@ const Header = () => {
         <h2 className="pt-4 lg:pt-10 text-lg font-medium tracking-tight sm:text-xl">
           Software Developer / Electrical Engineer
         </h2>
-        <div className="hidden lg:block pt-20">
+        <p className="pt-4">
+          But most importantly, solution builder!
+        </p>
+        <div className="hidden lg:block pt-8">
         <NavLinks />
       </div>
       <label className="flex justify-center cursor-pointer gap-2 pt-10">
