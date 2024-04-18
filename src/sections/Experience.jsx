@@ -72,7 +72,9 @@ function Experience() {
             key={`${experience.title}-${experience.company}`}
             className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl"
           >
-            <div className="md:min-w-24">{experience.date}</div>
+            <time dateTime={experience.date} className="text-end pr-2 md:min-w-24">
+              {experience.date}
+            </time>
             <div>
               <div className="flex items-center">
                 <h3 className="font-bold text-lg">{experience.title}</h3>
@@ -82,14 +84,13 @@ function Experience() {
               </p>
               <p className="">{experience.description}</p>
               <div className="flex flex-wrap gap-2 mt-2">
-                {experience.technologies.map((tech) => (
-                  <span key={tech} className="badge bg-gray-300 text-gray-800">
+                {experience.technologies.map((tech, index) => (
+                  <span key={index} className="badge bg-gray-300 text-gray-800">
                     {tech}
                   </span>
                 ))}
               </div>
             </div>
-            <div />
           </div>
         ))}
       </div>
