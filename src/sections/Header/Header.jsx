@@ -3,7 +3,7 @@ import NavLinks from "./NavLinks";
 const Header = () => {
   return (
     <div className="h-full">
-      <header className="card bg-base-200 hover:bg-base-300 hover:shadow-2xl p-4 pb-10 lg:mx-24 mx-4">
+      <header className="card bg-base-200 hover:bg-base-300 hover:shadow-2xl p-4 pb-10 lg:mx-12 mx-4">
         <h1 className=" text-3xl md:text-4xl font-bold tracking-tight mt-0">
           <a href="/">Hi there! I´m Diego and I love technology.</a>
         </h1>
