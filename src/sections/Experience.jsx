@@ -1,5 +1,21 @@
 const experiences = [
   {
+    title: "Freelance Full Stack Developer",
+    company: "Self Employed",
+    date: "2024",
+    description:
+      "Started building this portfolio to learn frontend, and then built up a full stack project for language learning.",
+    icon: "work",
+    technologies: [
+      "Python",
+      "Django Rest Framework",
+      "OpenAI",
+      "React",
+      "Javascript",
+      "TailwindCSS",
+    ],
+  },
+  {
     title: "Tech Development Engineer",
     company: "COPEC SA",
     date: "2020-2023",
@@ -56,9 +72,7 @@ function Experience() {
             key={`${experience.title}-${experience.company}`}
             className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl rounded-lg"
           >
-            <div className="md:min-w-24">
-            {experience.date}
-            </div>
+            <div className="md:min-w-24">{experience.date}</div>
             <div>
               <div className="flex items-center">
                 <h3 className="font-bold text-lg">{experience.title}</h3>
