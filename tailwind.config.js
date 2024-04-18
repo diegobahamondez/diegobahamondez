@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   daisyui: {
-    themes: [{
+    themes: ["night",{
       "lofi": {
         ...require("daisyui/src/theming/themes")["lofi"],
         "base-100": "#FAF7F5",
@@ -15,7 +15,7 @@ export default {
         "--rounded-btn": "0rem",
         "--rounded-badge": "0rem",
       },
-    }, "synthwave", "coffee", "night"],
+    }, "synthwave", "coffee"],
     darkTheme: "dark",
   },
   theme: {
