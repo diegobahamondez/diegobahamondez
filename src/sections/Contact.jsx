@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Footer from "./Footer";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const contactItems = [
   {
@@ -55,10 +56,10 @@ const Contact = () => {
                   style: { fontSize: item.fontSize },
                 })}
               </div>
-              <div className="my-auto pl-3 text-xs sm:text-base group-hover:underline decoration-solid">
+              <div className="extlink my-auto ml-3 text-xs sm:text-base decoration-solid">
                 {item.text}
               </div>
-              <div className="my-auto pl-2 group-hover:scale-150">&#8599;</div>
+              <div className="my-auto pl-2 group-hover:scale-150"><FaExternalLinkAlt className="inline-block ml-1"  size={12}/></div>
 
             </a>
           ))}
