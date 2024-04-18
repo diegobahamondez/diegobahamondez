@@ -68,7 +68,7 @@ function Experience() {
 
       <div className="grid grid-cols-1 gap-6">
         {experiences.map((experience) => (
-          <div
+          <article
             key={`${experience.title}-${experience.company}`}
             className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl"
           >
@@ -83,15 +83,15 @@ function Experience() {
                 <span className="font-bold">{experience.company}</span>
               </p>
               <p className="">{experience.description}</p>
-              <div className="flex flex-wrap gap-2 mt-2">
+              <ul className="flex flex-wrap gap-2 mt-2">
                 {experience.technologies.map((tech, index) => (
-                  <span key={index} className="badge bg-gray-300 text-gray-800">
+                  <li key={index} className="badge bg-gray-300 text-gray-800">
                     {tech}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
-          </div>
+          </article>
         ))}
       </div>
     </section>
