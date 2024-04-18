@@ -4,13 +4,13 @@ const Header = () => {
   return (
     <div className="h-full">
       <header className="card bg-base-200 hover:bg-base-300 hover:shadow-2xl p-4 pb-10 lg:mx-24 mx-4">
-        <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mt-0">
-          <a href="/">Diego Bahamondez</a>
+        <h1 className=" text-3xl md:text-4xl font-bold tracking-tight mt-0">
+          <a href="/">Hi there! I´m Diego and I love technology.</a>
         </h1>
-        <h2 className="pt-4 lg:pt-10 text-lg font-medium tracking-tight sm:text-xl">
+        <h2 className="pt-8 lg:pt-8 text-lg font-medium tracking-tight sm:text-xl">
           Software Developer / Electrical Engineer
         </h2>
-        <p className="pt-4">But most importantly, solution builder!</p>
+        <p className="pt-6">Big fan of software, IoT and electronics. Always learning something new! </p>
         <div className="hidden lg:block pt-8">
           <NavLinks />
         </div>
