@@ -2,7 +2,6 @@ import Header from "./sections/Header/Header";
 import About from "./sections/About";
 import Experience from "./sections/Experience";
 import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
 
 
 const App = () => {
@@ -21,9 +20,8 @@ const App = () => {
           >
             <About/>
             <Experience/>
-            <div className="min-h-screen pt-24">
+            <div className="flex flex-column min-h-screen pt-24">
             <Contact/>
-            <Footer/>
             </div>
           </main>
         </div>
