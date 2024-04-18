@@ -61,7 +61,7 @@ const experiences = [
 
 function Experience() {
   return (
-    <section id="experience" className="lg:pt-24">
+    <section id="experience" className="lg:pt-28">
       <h1 className="text-center pb-10 sm:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
         <a href="/">Experience</a>
       </h1>
@@ -70,7 +70,7 @@ function Experience() {
         {experiences.map((experience) => (
           <div
             key={`${experience.title}-${experience.company}`}
-            className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl rounded-lg"
+            className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl"
           >
             <div className="md:min-w-24">{experience.date}</div>
             <div>

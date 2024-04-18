@@ -27,12 +27,12 @@ const contactItems = [
 const Contact = () => {
   return (
     <section id="contact" className="text-center mb-0">
-      <h2 className="pb-12 lg:pb-20 text-3xl sm:text-5xl font-bold tracking-tight mt-0">
+      <h2 className="pb-8 lg:pb-16 text-3xl sm:text-5xl font-bold tracking-tight mt-4">
         <a href="/" className="">
           Contact
         </a>
       </h2>
-      <div className="flex flex-col justify-between">
+      <div className="card p-8 bg-base-200 hover:bg-base-300 hover:shadow-2xl flex flex-col justify-between">
         <h2 className="pb-12 text-3xl font-bold tracking-tight sm:text-4xl">
           Hola!
         </h2>
