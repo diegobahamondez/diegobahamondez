@@ -10,19 +10,19 @@ const contactItems = [
     icon: <MdEmail />,
     text: "diego.bahamondezm@gmail.com",
     link: "mailto:diego.bahamondezm@gmail.com",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   },
   {
     icon: <FaLinkedin />,
     text: "linkedin.com/in/diegobahamondezm",
     link: "https://www.linkedin.com/in/diegobahamondezm",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   },
   {
     icon: <FaGithub />,
     text: "github.com/diegobahamondez",
     link: "https://github.com/diegobahamondez",
-    fontSize: "2rem",
+    fontSize: "1.5rem",
   },
 ];
 
@@ -51,15 +51,15 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="group flex justify-center cursor-pointer"
             >
-              <div className="rounded p-1 transition-all duration-300 ease-in-out group-hover:text-base-100  group-hover:bg-base-content">
+              <div className="flex flex-row content-center rounded p-1 transition-all duration-300 ease-in-out group-hover:text-base-100  group-hover:bg-base-content">
                 {React.cloneElement(item.icon, {
-                  style: { fontSize: item.fontSize },
-                })}
+                  style: { fontSize: item.fontSize, "margin-right": "4px" },
+                })} {} {item.text} <FaExternalLinkAlt className="ml-1 mt-1"  size={18}/>
               </div>
               <div className="extlink my-auto ml-3 text-xs sm:text-base decoration-solid">
-                {item.text}
+                
               </div>
-              <div className="my-auto pl-2 group-hover:scale-150"><FaExternalLinkAlt className="inline-block ml-1"  size={12}/></div>
+              <div className="my-auto pl-2 group-hover:scale-150"></div>
 
             </a>
           ))}
