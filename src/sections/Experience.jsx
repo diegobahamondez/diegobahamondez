@@ -5,7 +5,6 @@ const experiences = [
     date: "2024",
     description:
       "Started building this portfolio to learn frontend, and then built up a full stack project for language learning.",
-    icon: "work",
     technologies: [
       "Python",
       "Django Rest Framework",
@@ -20,14 +19,14 @@ const experiences = [
     company: "COPEC SA",
     date: "2020-2023",
     description:
-      "Cloud backend developer for three serverless projects with a focus on IoT, Energy Efficiency, and Civil Engineering Project Management. Used technologies include Python, GraphQL, AWS Lambda, DynamoDB, and API Gateway.",
-    icon: "work",
+      "Developed innovative projects leveraging Python, AWS services and electronic sensors. Developed the backend of IoEnergy, an IoT gasoline inventory app with Python and AWS, reducing downtime from shortages. Developed the backend for Codex, a civil engineering project management web app with Python, GraphQL, and Pandas, acclaimed for improving project organization and cost estimation in construction.",
     technologies: [
       "Python",
       "GraphQL",
       "AWS Lambda",
       "DynamoDB",
       "API Gateway",
+      "AWS IoT Core",
     ],
   },
   {
@@ -36,8 +35,7 @@ const experiences = [
     date: "2019-2020",
     description:
       "Developed an app for the Ministry of Transportation of Chile to estimate product transportation costs using Python, PostgreSQL, and PyQt5.",
-    icon: "work",
-    technologies: ["Python", "PostgreSQL", "PyQt5"],
+    technologies: ["Python", "Pandas", "PostgreSQL", "PyQt5"],
   },
   {
     title: "Student Researcher",
@@ -45,8 +43,7 @@ const experiences = [
     date: "2018-2019",
     description:
       "Implemented a laboratory for viscosity measurement with ultrasonic signal generators and oscilloscopes, and utilized Python's scientific libraries for signal analysis and viscosity calculations.",
-    icon: "work",
-    technologies: ["Python"],
+    technologies: ["Python", "Pandas", "Electronics Sensors", "PCB Design"],
   },
   {
     title: "Electrical Engineering",
@@ -54,8 +51,16 @@ const experiences = [
     date: "2019",
     description:
       "Specialized in industrial control systems, learned several programming languages and won the 2016's electrical engineering fair in the innovation category.",
-    icon: "education",
-    technologies: [],
+    technologies: [
+      "Electromechanics",
+      "Electronics",
+      "Arduino",
+      "C",
+      "PLCs",
+      "Matlab",
+      "Networking",
+      "Power Electronics",
+    ],
   },
 ];
 
@@ -70,9 +75,12 @@ function Experience() {
         {experiences.map((experience) => (
           <article
             key={`${experience.title}-${experience.company}`}
-            className="card md:flex md:flex-row pb-4 p-2 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl"
+            className="card md:flex md:flex-row pb-4 p-4 bg-base-200 hover:bg-base-300 text-base-content  hover:shadow-2xl"
           >
-            <time dateTime={experience.date} className="text-end pr-2 md:min-w-24">
+            <time
+              dateTime={experience.date}
+              className="text-start pr-2 md:min-w-24"
+            >
               {experience.date}
             </time>
             <div>
@@ -82,7 +90,7 @@ function Experience() {
               <p className="pb-2">
                 <span className="font-bold">{experience.company}</span>
               </p>
-              <p className="">{experience.description}</p>
+              <p className="text-sm">{experience.description}</p>
               <ul className="flex flex-wrap gap-2 mt-2">
                 {experience.technologies.map((tech, index) => (
                   <li key={index} className="badge bg-gray-300 text-gray-800">
