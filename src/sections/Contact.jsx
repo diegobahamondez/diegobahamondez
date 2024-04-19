@@ -42,12 +42,12 @@ const Contact = () => {
         <h2 className="pb-12 text-3xl font-bold tracking-tight sm:text-4xl">
           Hola!
         </h2>
-        <div className="text-lg pb-12">
+        <div className="text-lg pb-12  text-center">
           Whether you need a developer or just want to say hello, let&rsquo;s be
           in touch!
         </div>
 
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center">
           {contactItems.map((item, index) => (
             <a
               key={index}
@@ -56,7 +56,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="group flex cursor-pointer"
             >
-              <div className="extlink text-sm flex flex-row content-center rounded p-1 mb-4 ">
+              <div className="extlink text-sm flex flex-row content-center rounded p-1 mb-2 ">
                 {React.cloneElement(item.icon, {
                   style: { fontSize: item.fontSize, "margin-right": "4px" },
                 })}{" "}
