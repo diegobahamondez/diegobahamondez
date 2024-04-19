@@ -28,9 +28,9 @@ export default function About() {
             Back in 2019, I first encountered Python while working on my
             university thesis for ultrasound signal analysis. Since then, I have
             been using it for a variety of purposes and specially for backend
-            development in Chile. I recently learned ReactJS and now I´m working
+            development in Chile. I recently learned ReactJS and now I&rsquo;m working
             as a freelance developer in Berlin, while learning the german
-            language. I´m also developing a { }
+            language. I&rsquo;m also developing a { }
             <a href="https://gptandem-4e1b1.web.app/" className="extlink">
               web app<FaExternalLinkAlt className="inline-block ml-1"  size={12}/>
             </a>
