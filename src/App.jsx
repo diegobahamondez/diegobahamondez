@@ -6,7 +6,7 @@ import Contact from "./sections/Contact";
 
 const App = () => {
   return (
-    <div id="background" className="text-base-300 text-center min-h-dvh">
+    <div id="background" className="text-base-300 text-justify min-h-dvh">
         <div
           id="content"
           className="lg:flex text-base-content pb-0 min-h-screen max-w-screen px-2 py-12 md:px-12 md:pt-20 lg:px-24 lg:py-0"
@@ -16,13 +16,11 @@ const App = () => {
           </header>
           <main
             id="about"
-            className="relative flex flex-col right-0 px-4 lg:px-0 pb-0px pt-12 lg:pt-24 lg:w-1/2 text-justify"
+            className="relative flex flex-col right-0 px-4 lg:px-0 pb-0px pt-12 lg:pt-24 lg:w-1/2"
           >
             <About/>
             <Experience/>
-            <div className="flex flex-column min-h-screen pt-24">
             <Contact/>
-            </div>
           </main>
         </div>
     </div>
