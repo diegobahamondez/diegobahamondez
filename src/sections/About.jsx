@@ -23,8 +23,8 @@ export default function About() {
         <h1 className="text-center lg:pt-4 pb-6 lg:pb-16 text-3xl sm:text-5xl font-bold tracking-tight">
           <a href="/">About</a>
         </h1>
-        <div className="card p-4 bg-base-200 hover:bg-base-300 hover:shadow-2xl">
-          <p className="mb-4 ">
+        <div className="card text-sm p-4 bg-base-200 hover:bg-base-300 hover:shadow-2xl">
+          <p className="mb-4">
             Back in 2019, I first encountered Python while working on my
             university thesis for ultrasound signal analysis. Since then, I have
             been using it for a variety of purposes and specially for backend
