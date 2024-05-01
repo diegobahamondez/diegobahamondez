@@ -4,7 +4,7 @@ const experiences = [
     company: "Self Employed",
     date: "2024",
     description:
-      "Started building this portfolio to learn frontend, and then built up a full stack project for language learning.",
+      "Started building this portfolio to learn frontend using React JS, TailwindCSS and DaisyUI. Then built up GPTandem, a full stack project for language learning, including AI powered conversation practice with grammar corrections, speech synthesis and speech recognition. Also delved into prompt ingeneering best practices to get the best out of the AI models, improving the chatbot responses and providing context-meaningful translations and example sentences for clicked words.",
     technologies: [
       "Python",
       "Django Rest Framework",
